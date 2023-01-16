@@ -1,0 +1,30 @@
+package com.example.listadelacomprafirebase;
+
+import android.os.Bundle;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.view.View;
+
+
+import com.example.listadelacomprafirebase.databinding.ActivityListaCompraBinding;
+
+public class ListaCompraActivity extends AppCompatActivity {
+    private ActivityListaCompraBinding binding;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
+        binding = ActivityListaCompraBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
+
+        setSupportActionBar(binding.toolbar);
+
+        binding.fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+            }
+        });
+    }
+}
